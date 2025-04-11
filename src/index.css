@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Winky Sans", sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+  background-image: url("./images/pexels-miriamespacio-110854.jpg");
+  background-size: cover;
+  background-clip: border-box;
+  background-attachment: fixed;
+}
+
+.design-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4em;
+}
+
+.header-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1em;
+}
+
+.logo-div{
+  display: flex;
+  gap: 1em;
+
+  margin-left: 2em;
+}
+
+.logo-div div{
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 0.5em;
+  border-radius: 1em;
+  background-color: white;
+}
+
+.logo-div div img{
+  height: 4em;
+}
+
+nav{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* margin-left: 100px; */
+  border-radius: 1em;
+  padding: 0em 1.5em;
+  background-color: white;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  padding: 1em;
+  position: relative;
+}
+
+nav ul li, .login-icon div{
+  height: 3em;
+  width: 3em;
+  background-color: black;
+  border-radius: 60px;
+  transition: 500ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+nav ul li:hover, .login-icon div:hover{
+  width: 120px;
+}
+
+.icon, .login-div div svg{
+  height: 35px;
+  width: 35px;
+  transition: 300ms;
+  position: absolute;
+}
+
+nav ul li:hover .icon, .login-icon div:hover svg{
+  transform: scale(0);
+  color: black;
+}
+
+nav ul li a, .login-icon div a{
+  transform: scale(0);
+  color: white;
+  text-align: center;
+  transition: 300ms;
+  font-size: 1.2rem;
+  font-family: "Winky Sans", sans-serif;
+  text-decoration: none;
+}
+
+nav ul li:hover a, .title, .login-icon div:hover a{
+  transform: scale(1);
+}
+
+.login-icon{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* margin-left: 100px; */
+  border-radius: 1em;
+  padding: 1em 1.5em;
+  position: relative;
+  margin-right: 2em;
+  background-color: white;
+}
+
+.login-icon svg{
+  height: 35px;
+  width: 35px;
+  position: absolute;
+}
+
+/* Home */
+
+.about{
+  width: 80%;
+  border: 2px solid white;
+  margin: auto;
+  color: white;
+  font-size: 1.4rem;
+  font-family: "Winky Sans", sans-serif;
+  padding: 2em 3em;
+  border-radius: 2em;
+  text-align: justify;
+}
+
+.schedule-heading{
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 1em;
+  color: white;
+  font-family: "Winky Sans", sans-serif;
+}
+
+.schedule{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.day-header{
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  /* border: 1px solid white; */
+  margin: auto;
+  gap: 1em;
+}
+
+.event-list{
+  margin-top: 3em;
+}
+
+.event-card{
+  color: black;
+  border: 2px solid white;
+  padding: 2em 3em;
+  margin: 1.5em;
+  background-color: white;
+  border-radius: 2em;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-event-heading{
+  font-size: 2.5rem;
+}
+
+.schedule-event-description{
+  font-size: 1.2rem;
+}
+
+.schedule-event-location{
+  font-size: 1.5rem;
+}
+
+.schedule-event-time{
+  font-size: 1.5rem;
+}
+
+.day-display{
+  /* border: 2px solid white; */
+  /* padding: 1em 2em; */
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.day-display div{
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  font-size: 2.2rem;
+  transition: 500ms;
+}
+
+.day-num{
+  position: absolute;
+  transition: 500ms;
+}
+
+.day-display div:hover{
+  width: 150px;
+}
+
+.day-display div:hover .day-num{
+  transform: scale(0);
+}
+
+.day-display div:hover .day-date{
+  transform: scale(1);
+}
+
+.day-date{
+  transform: scale(0);
+  transition: 500ms;
+}
+
+.login-main-div{
+  color: white;
+  margin-top: 3em;
+  text-align: center;
+}
+
+.login-main-div h1{
+  font-size: 3rem;
+}
+
+.login-main-div p{
+  font-size: 2rem;
+}
+
+.login-form-div{
+  display: flex;
+  justify-content: center;
+}
+
+form{
+  display : flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 400px;
+  background-color: white;
+  padding: 1.5em 2em;
+  color: black;
+  font-size: 1.7rem;
+  margin-top: 3em;
+  border-radius: 1.5em;
+}
+
+form input{
+  font-size: 1.7rem;
+  border-radius: 2em;
+  padding: 0.3em 0.7em;
+  outline: none;
+  border: none;
+  border: 2px solid black;
+}
+
+form input:focus{
+  outline: none;
+  border: none;
+  border: 2px solid black;
+}
+
+form button{
+  font-size: 1.7rem;
+  background-color: white;
+  outline: none;
+  border-radius: 2em;
+  padding: 0.3em 0.7em;
+  transition: 500ms;
+}
+
+form button:hover{
+  background-color: black;
+  color: white;
+}
+
+.profile{
+  color: white;
+  text-align: center;
+}
+
+.profile h1{
+  font-size: 3rem;
+}
+
+.profile p{
+  font-size: 1.5rem;
+}
