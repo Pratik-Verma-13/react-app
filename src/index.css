@@ -308,3 +308,30 @@ form button:hover{
 .profile p{
   font-size: 1.5rem;
 }
+
+.team{
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+.members-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-auto-rows: 400px;
+  border: 1px solid white;
+  /* color: white; */
+  margin: auto;
+  gap: 1em;
+}
+
+.member{
+  border: 2px solid white;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 2em;
+}
+
