@@ -6,6 +6,7 @@ import Schedule from "./Schedule";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Login from "./Login";
 import Profile from "./Profile";
+import Team from "./Team";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route exact path='/Schedule' element={<Schedule/>} />
               <Route exact path='/Login' element={<Login/>} />
               <Route exact path='/Profile' element={<Profile/>}/>
+              <Route exact path='/Team' element={<Team/>}/>
             </Routes>
           </div>
       </div>
