@@ -13,7 +13,7 @@ const Team = () => {
                 team: "Tech Team",
                 linkedin: "linkedin.com/A",
                 image: boy,
-                fb: "fb.com/A",
+                fb: "www.fb.com/A",
                 email: "abc@email.com"
             },
             {
@@ -49,27 +49,11 @@ const Team = () => {
                 email: "abc@email.com"
             },
             {
-                name: "Shyam",
-                team: "Design Team",
-                linkedin: "linkedin.com/B",
-                image: boy,
-                fb: "fb.com/B",
-                email: "abc@email.com"
-            },
-            {
                 name: "Dhiraj",
                 team: "Events Team",
                 linkedin: "linkedin.com/C",
                 image: boy,
                 fb: "fb.com/C",
-                email: "abc@email.com"
-            },
-            {
-                name: "Keshav",
-                team: "Sponsorship Team",
-                linkedin: "linkedin.com/D",
-                image: boy,
-                fb: "fb.com/D",
                 email: "abc@email.com"
             },
             {
