@@ -310,28 +310,132 @@ form button:hover{
 }
 
 .team{
-  margin-top: 5em;
+  margin-top: 10em;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+.team h1{
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+}
+
+.team-block{
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .members-grid{
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  grid-auto-rows: 400px;
-  border: 1px solid white;
+  grid-auto-rows: 300px;
+  /* border: 1px solid white; */
   /* color: white; */
   margin: auto;
-  gap: 1em;
+  margin-top: 10em;
+  gap: 5em;
+}
+
+
+
+.member-image-div{
+  background-color: white;
+  border-radius: 50%;
+  width: 11.5em;
+  height: 11.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.member-image-div img{
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+
+}
+
+.member:hover .member-image-div {
+  margin-top: -50%;
+}
+
+.member:hover{
+  /* background-color: white; */
+  /* display: block; */
+  border: 2px solid white;
+}
+
+.member:hover .member-name{
+  margin-top: 1.4em;
+  font-size: 1.3rem;
+}
+
+.member:hover .member-contact a{
+  display: flex;
+  transform: scale(1);
 }
 
 .member{
-  border: 2px solid white;
-  background-color: white;
+  /* border: 2px solid white; */
+  /* background-color: white; */
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
-  border-radius: 2em;
+  border-radius: 10%;
+  transition: 500ms;
+  position: relative;
 }
 
+.member-name{
+  background-color: white;
+  padding: 0.5em 2em;
+  border-radius: 1em;
+  margin-top: 1em;
+  transition-duration: 500ms;
+}
+
+.member-contact{
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  /* display: none; */
+}
+
+.member-contact a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.7em;
+  width: 2.7em;
+  background-color: white;
+  border-radius: 50%;
+  margin: 1em;
+  transition-duration: 500ms;
+  /* transition-timing-function: ease-in-out; */
+  transform: scale(0);
+
+}
+
+.member-contact a:hover img{
+  height: 2.9em;
+  width: 2.9em;
+}
+
+.member-contact a img{
+  height: 2.5em;
+  transition-duration: 300ms;
+}
+
+.event-heading{
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
